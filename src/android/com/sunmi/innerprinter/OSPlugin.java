@@ -1,4 +1,4 @@
-package com.example.osplugin;
+package com.sunmi.innerprinter;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
