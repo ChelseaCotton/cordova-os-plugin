@@ -9,7 +9,6 @@
     <clobbers target="cordova.plugins.OSPlugin" />
   </js-module>
   <platform name="android">
-    <framework src="enableAidl.gradle" custom="true" type="gradleReference" />
     <preference name="ANDROID_SUPPORT_V13_VERSION" default="27.+" />
     <framework src="com.sunmi:printerx:1.0.17" />
     <config-file target="res/xml/config.xml" parent="/*">
