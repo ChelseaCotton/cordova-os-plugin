@@ -12,7 +12,7 @@
       <config-file target="build.gradle" parent="android">
         <![CDATA[
             android {
-                buildFeatures.aidll = true
+                buildFeatures.aidl = true
             }
         ]]>
     </config-file>
