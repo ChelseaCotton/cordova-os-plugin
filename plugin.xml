@@ -9,8 +9,12 @@
     <clobbers target="cordova.plugins.OSPlugin" />
   </js-module>
   <platform name="android">
-    <config-file target="build.gradle" parent="/*">
-    apply from: "script/enableAidl.gradle"
+    <config-file target="app/build.gradle" parent="android">
+        <edit-config file="app/build.gradle" target="/android/buildFeatures" mode="merge">
+            <buildFeatures>
+                <aidl>true</aidl>
+            </buildFeatures>
+        </edit-config>
     </config-file>
     <preference name="ANDROID_SUPPORT_V13_VERSION" default="27.+" />
     <framework src="com.sunmi:printerx:1.0.17" />
