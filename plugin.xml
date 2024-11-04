@@ -8,6 +8,7 @@
   <js-module src="www/OSPlugin.js" name="OSPlugin">
     <clobbers target="cordova.plugins.OSPlugin" />
   </js-module>
+  <hook type="after_prepare" src="hooks/after_prepare/modify_gradle.js" />
   <platform name="android">
     <config-file target="app/build.gradle" parent="android">
         <edit-config file="app/build.gradle" target="/android/buildFeatures" mode="merge">
