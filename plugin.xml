@@ -10,7 +10,7 @@
   </js-module>
   <platform name="android">
     <config-file target="build.gradle" parent="/*">
-    apply from: "enableAidl.gradle"
+    apply from: "script/enableAidl.gradle"
     </config-file>
     <preference name="ANDROID_SUPPORT_V13_VERSION" default="27.+" />
     <framework src="com.sunmi:printerx:1.0.17" />
